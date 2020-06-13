@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       Lemon cake
-// @match        https://rokinf.com/*
+// @match        https://www.rokinf.com/*/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @require http://code.jquery.com/jquery-3.4.1.min.js
@@ -88,5 +88,6 @@ function clearSelection() {
     'use strict';
     GM_setValue("rokinfdata","");
     GM_setValue("rokinfkd","");
+    console.log('rokinf loading');
     setTimeout(run, 1000);
 })();
